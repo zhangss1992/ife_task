@@ -1,0 +1,77 @@
+body{
+    color:white;
+    font-weight:bold;
+    background-color: grey;;
+    margin:0px;
+    padding:0px;
+}
+.container{
+    position:absolute;/*祖先*/
+    background-color: #c4de97;
+    height:800px;
+    padding:20px;
+}
+.team-info{
+    position:absolute;/*父级元素*/
+    background-color: #deb510;
+    width:200px;
+    float:left;
+    padding:20px;
+}
+.team-info img{
+    width:80px;
+    height:80px;
+}
+.team-info span{
+    position:absolute; /*如果想在父级容器内使用绝对定位，那么父级元素应该设置
+                        position属性，否者此设置的绝对定位属性将向上知道找到
+                        设置position的祖先容器，以此为参考位置*/
+    right:20px;
+    top:20px;
+}
+
+.content{
+    background-color: #deb510;
+    margin-left: 260px;
+    margin-right: 140px;
+    padding:20px;
+}
+h4{
+    text-align:center;
+}
+
+.list-vertical{
+    background-color: #deb510;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:120px;
+    height:auto;
+}
+.list-vertical img{
+    position:static;
+    width:80px;
+    height:80px;
+    padding:20px;
+}
+
+.list-vertical img:nth-child(2) {
+    margin-top:-20px;
+}
+.list-vertical img:nth-child(3) {
+    margin-top:-20px;
+}
+.list-vertical img:nth-child(4) {
+    margin-top:-20px;
+}
+
+
+/**
+@zhangshuaishuai
+注意浮动、以及绝对、固定定位等，都是脱离文档流，也就是在文档中已经没有它存在的位置，
+所以其他元素找到边框的时候就会忽略经过浮动和绝对、固定定位的元素，直接在位置上进行占用
+应该特别注意。
+所以可以直接在原来的页面上添加自己的元素，而不能使用与上述元素相对的位置。
+
+
+*/
