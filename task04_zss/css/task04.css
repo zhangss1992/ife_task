@@ -1,0 +1,13 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.rec{
+    position:absolute;
+    margin:-100px -200px;
+    left:50%; /*上下左右必须都设置成50%，才能确定一个中心点*/
+    right:50%;
+    top:50%;
+    bottom:50%;
+    background-color: #ff8c23;
+}
