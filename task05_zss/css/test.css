@@ -14,7 +14,7 @@ h2,h3{
     height:65px;
     top:0px;
     background-color: #1f1a17;
-   /* font-weight:bold;*/
+    /* font-weight:bold;*/
     z-index:1;
 }
 
@@ -172,5 +172,8 @@ tfoot td{
 @media all and (max-width:1467px){
     .right{
         display: none;
+    }
+    .left{
+        width:90%;
     }
 }
